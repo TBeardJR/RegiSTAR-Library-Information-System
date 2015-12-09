@@ -1,0 +1,54 @@
+ 
+   <div class="register-box">
+     <div class="register-logo">
+       <b>RegiSTAR</b>
+     </div>
+
+     <div class="register-box-body">
+       <p class="login-box-msg">Create a new account</p>
+       <form>
+         <div class="form-group has-feedback">
+           <input ng-model ="name" type="text" class="form-control" placeholder="Name" />
+           <span class="glyphicon glyphicon-user form-control-feedback"></span>
+         </div>         
+         <div class="form-group has-feedback">
+           <input ng-model="address" type="text" class="form-control" placeholder="Address" />
+           <span class="glyphicon glyphicon-home form-control-feedback"></span>
+         </div>
+         <div class="form-group has-feedback">
+           <input ng-model="paymentInfo" type="text" class="form-control" placeholder="Payment Info" />
+           <span class="glyphicon glyphicon-folder-close form-control-feedback"></span>
+         </div>
+         <div class="form-group has-feedback">
+           <input ng-model="password" type="password" class="form-control" placeholder="Password" />
+           <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+         </div>
+         <div class="form-group has-feedback">
+           <input ng-model="reTypedPassword" type="password" class="form-control" placeholder="Retype password" />
+           <span class="glyphicon glyphicon-log-in form-control-feedback"></span>
+         </div>
+         <div ng-show="master" class="form-group has-feedback">
+           <input ng-model="administratorKey" type="password" class="form-control" placeholder="Administrator Key" />
+           <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+         </div>
+         <div class="row">
+         <div class="col-xs-1"></div>
+           <div class="col-xs-7">
+             <div class="checkbox icheck">
+               <label>
+                 <input class="icheckbox_square-blue iradio_square-blue" ng-model="master" type="checkbox"> 
+               </label>
+               Are you an administrator?
+             </div>
+           </div><!-- /.col -->
+           <div class="col-xs-4">
+             <button ng-click="createAccount()" type="submit" class="btn btn-primary btn-block btn-flat">Register</button>
+           </div><!-- /.col -->
+         </div>
+       </form>
+       <br />
+       <button  ng-click="showLoginPage()" class="text-center btn btn-danger btn-block btn-flat">I already have an account</button>
+     </div><!-- /.form-box -->
+   </div><!-- /.register-box -->   
+   
+ 

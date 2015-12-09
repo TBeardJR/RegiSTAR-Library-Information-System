@@ -1,0 +1,42 @@
+ 
+   <div class="login-box">
+   <rs-register-page ng-show="readyToRegister"></rs-register-page>   
+   <div ng-hide="readyToRegister">
+     <div class="login-logo">
+       <a href="../../index2.html"><b>RegiSTAR</b></a>
+     </div><!-- /.login-logo -->
+     <div class="login-box-body">
+       <p class="login-box-msg">Sign in to start your session</p>
+       <form>
+         <div class="form-group has-feedback">
+           <input ng-model="loginName" type="text" class="form-control" placeholder="Name" />
+           <span class="glyphicon glyphicon-user form-control-feedback"></span>
+         </div>
+         <div class="form-group has-feedback">
+           <input ng-model="loginPassword"type="password" class="form-control" placeholder="Password" />
+           <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+         </div>
+         <div class="row">
+           
+           <div class="col-xs-4">
+             <button ng-click="signIn()" type="submit" class="btn btn-primary btn-block btn-flat">Sign In</button>
+           </div><!-- /.col -->
+         </div>
+       </form>
+
+       <br />
+       <button ng-click="showRegistrationPage()" class="text-center btn btn-danger btn-block btn-flat">Create a new account</button>
+
+     </div><!-- /.login-box-body -->
+     </div>
+   </div><!-- /.login-box -->    
+   <script>
+     $(function () {
+       $('input').iCheck({
+         checkboxClass: 'icheckbox_square-blue',
+         radioClass: 'iradio_square-blue',
+         increaseArea: '20%' // optional
+       });
+     });
+   </script>
+

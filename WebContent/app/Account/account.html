@@ -1,0 +1,100 @@
+<br />
+<div class="main-content">
+	<div class="tab-content profile-page">
+		<!-- PROFILE TAB CONTENT -->
+		<div class="tab-pane profile active" id="profile-tab">
+			<div class="row">
+				<div class="col-md-3">
+					<div class="user-info-left">
+						<img src="images/user2-160x160.jpg" class="img-circle"
+							alt="Profile Picture">
+						<h2>{{loginResponse.account.name}}</h2>
+						<button ng-click="deleteAccount()" type="button"
+							class="btn btn-danger">Delete Account</button>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="user-info-right">
+						<div class="basic-info">
+							<h3>
+								<i class="fa fa-square"></i> Basic Information
+							</h3>
+							<p class="data-row">
+								<span class="data-name"><b>Username:</b></span> <span
+									class="data-value">{{loginResponse.account.name}}</span>
+							</p>
+							<p class="data-row">
+								<span class="data-name"><b>Address: </b></span> <span
+									class="data-value">{{loginResponse.account.address}}</span>
+							</p>
+							<p class="data-row">
+								<span class="data-name"><b>Payment Info: </b></span> <span
+									class="data-value">{{loginResponse.account.paymentInfo}}</span>
+							</p>
+							<p class="data-row">
+								<span class="data-name"><b>Account Type: </b></span> <span
+									class="data-value"><a href="#">{{accountType}}</a></span>
+							</p>
+							<p class="data-row">
+								<span class="data-name"><b>Is Membership Active: </b></span> <span
+									class="data-value">{{isMembershipActive}}</span>
+							</p>
+							<p class="data-row">
+								<span class="data-name"><b>Balance: </b></span> <span
+									class="data-value">{{loginResponse.account.balance |
+									currency:"USD$ "}}</span>
+							</p>
+							<p class="data-row">
+								<span class="data-name"><b>Books: </b></span> <span
+									class="data-value">{{loginResponse.account.balance |
+									currency:"USD$ "}}</span>
+							</p>
+							<label for="exampleInputEmail1">List of books reserved: </label>
+							<div ng-repeat="booked in list.listOfBooksReserved ">
+								 {{booked}}
+							</div>
+						</div>
+						<button ng-click="showChangeAccountInfoForm()" type="button"
+							class="btn btn-info">Change Account Info</button>
+					</div>
+				</div>
+				<div ng-show="changeAccountInfo" class="col-md-5 col-md-offset-1">
+					<h3>Update Account Info</h3>
+					<form>
+						<div class="form-group">
+							<label for="exampleInputEmail1">Username</label> <input
+								ng-model="data.newName" type="text" class="form-control"
+								id="exampleInputEmail1" placeholder="Name">
+						</div>
+						<div class="form-group">
+							<label for="exampleInputPassword1">Address</label> <input
+								ng-model="data.newAddress" type="text" class="form-control"
+								id="exampleInputPassword1" placeholder="Address">
+						</div>
+						<div class="form-group">
+							<label for="exampleInputPassword1">Payment Info</label> <input
+								ng-model="data.newPaymentInfo" type="text" class="form-control"
+								id="exampleInputPassword1" placeholder="Payment Info">
+						</div>
+						<div class="form-group">
+							<label for="exampleInputPassword1">Password</label> <input
+								ng-model="data.newPassword" type="password" class="form-control"
+								id="exampleInputPassword1" placeholder="Enter new password here">
+						</div>
+						<div class="form-group">
+							<label for="exampleInputEmail1">Add Money to Account</label> <input
+								ng-model="data.moneyToAdd" type="text" class="form-control"
+								id="exampleInputEmail1" placeholder="Amount">
+						</div>
+						<div class="btn-toolbar" role="toolbar"
+							aria-label="change account info form">
+							<button ng-click="changeAccountInformation()" type="submit"
+								class="btn btn-success">Submit</button>
+							<button ng-click="hideChangeAccountInfoForm()" type="button"
+								class="btn btn-warning">Cancel</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>

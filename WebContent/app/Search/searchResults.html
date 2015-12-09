@@ -1,0 +1,57 @@
+<div class="container">
+	<section class="panel panel-default">
+		<div class="panel-heading text-center">Search Result</div>
+		<div class="panel-body">
+			<div class="well well-lg container-fluid">
+				<div class="col-lg-3">
+					<img src="images/default_cover_image.jpg" class="img-thumbnail"
+						alt="Profile Picture">
+					<div>
+						<br />
+						<button ng-click="makePayment()" type="button" class="btn btn-success">  Rent  </button>						
+						<button ng-click="reserveBook()" type="button" class="btn btn-danger">Reserve</button>
+					</div>
+				</div>
+				<div class="col-lg-9">
+					<form>
+						<div class="form-group">
+							<label for="exampleInputEmail1">Title:</label> {{book.title}}
+						</div>
+						<div class="form-group">
+							<label for="exampleInputEmail1">Description:</label>
+							{{book.description}}
+						</div>
+						<div class="form-group">
+							<label for="exampleInputEmail1">Author:</label> {{book.author}}
+						</div>
+						<div class="form-group">
+							<label for="exampleInputEmail1">Price:</label> {{book.price |
+							currency:"USD$ "}}
+						</div>
+						<div class="form-group">
+							<label for="exampleInputEmail1">Genre:</label> {{book.genre}}
+						</div>
+						<div class="form-group">
+							<label for="exampleInputEmail1">Physical:</label> Yes
+						</div>
+						<div class="form-group">
+							<label for="exampleInputEmail1">Status:</label> Available
+						</div>
+						<div class="form-group">
+							<label for="exampleInputEmail1">ISBN:</label> {{book.ISBN}}
+						</div>
+						<div class="form-group">
+							<label for="exampleInputEmail1">Publication Date:</label>
+							{{book.publicationDate}}
+						</div>
+						<div class="form-group">
+							<label for="exampleInputEmail1">Publisher:</label>
+							{{book.publisher}}
+						</div>
+					</form>
+				</div>
+
+			</div>
+		</div>
+	</section>
+</div>

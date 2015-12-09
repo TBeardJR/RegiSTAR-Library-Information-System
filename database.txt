@@ -1,0 +1,10 @@
+Hunger Games,A girl trying not to die,Suzanne Collins,Awesome Book! Not too Bad!,10.00,Comedy,1,1
+Harry Potter,You're a wizard Harry!,JK Rowling,Very Predictable, 5.00,Horror,1,1
+Twilight,A gothic girl cant make up her mind,Stephenie Meyer,Worst romance book ever, 1.00,Romance,1,0
+The Adventures of Tom Sawyer,No one really knows exactly what this is about,Mark Twain,Very confusing,50.00,Comedy,1,1
+Huckleberry Finn,A boy living in the south,Mark Twain,Could be worse?,12.50,Adventure,1,0
+Wuthering Heights,A tale of love,Emily Bronte,Amazingly depressing,13.99,Romance,1,1
+Dracula,Ahhh! It's a vampire!,Bram Stoker,The original twilight,29.99,Drama,0,1
+The Great Gatsby,A lonely rich man,F. Scott Fitzgerald,Leonardo DiCaprio was great in this,19.99,Drama,1,1
+To Kill A Mockingbird,A girl growing up in the rural south,Harper Lee,Boo Radley was great!,9.99,Suspense,0,0
+Animal Farm,Animals alluding to government and political issues,George Orwell,An American Classic! 10/10 would recommend,9.99,Comedy,1,1
